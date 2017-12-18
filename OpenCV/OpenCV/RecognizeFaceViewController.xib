@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecognizeFaceViewController">
+            <connections>
+                <outlet property="checkPeople" destination="Ta3-Jo-F4K" id="VtM-Be-bE7"/>
+                <outlet property="detectImageView" destination="5t5-1F-yNP" id="eyr-ke-onH"/>
+                <outlet property="view" destination="iN0-l3-epB" id="mtF-qx-c3P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5t5-1F-yNP">
+                    <rect key="frame" x="112.5" y="120" width="150" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="ZFn-Ne-a54"/>
+                        <constraint firstAttribute="height" constant="200" id="tka-LD-5hD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活体检测：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJq-ac-CvN">
+                    <rect key="frame" x="59" y="340" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未通过" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ta3-Jo-F4K">
+                    <rect key="frame" x="154" y="340" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPp-cQ-u18">
+                    <rect key="frame" x="172" y="405" width="31" height="30"/>
+                    <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="backButtonClicked:" destination="-1" eventType="touchUpInside" id="93i-K0-yOq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5t5-1F-yNP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="67u-oM-z3t"/>
+                <constraint firstItem="Ta3-Jo-F4K" firstAttribute="leading" secondItem="FJq-ac-CvN" secondAttribute="trailing" constant="8" id="Leh-WU-aZA"/>
+                <constraint firstItem="gPp-cQ-u18" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pkg-S9-j0B"/>
+                <constraint firstItem="FJq-ac-CvN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="59" id="ckc-wS-w80"/>
+                <constraint firstItem="5t5-1F-yNP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="hd6-ag-dHd"/>
+                <constraint firstItem="Ta3-Jo-F4K" firstAttribute="top" secondItem="5t5-1F-yNP" secondAttribute="bottom" constant="20" id="jFA-Nj-tnj"/>
+                <constraint firstItem="gPp-cQ-u18" firstAttribute="top" secondItem="FJq-ac-CvN" secondAttribute="bottom" constant="44" id="nKJ-KT-qcf"/>
+                <constraint firstItem="FJq-ac-CvN" firstAttribute="top" secondItem="5t5-1F-yNP" secondAttribute="bottom" constant="20" id="uMH-h0-eW3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
