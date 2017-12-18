@@ -5,14 +5,14 @@ iOS平台实时离线人脸检测、身份识别
 ## 使用
 ### 录入
 
-![(录入)](https://raw.githubusercontent.com/Bighit/FaceRecognizer/master/input.gif){:height="50%" width="50%"}
+![(录入)](https://raw.githubusercontent.com/Bighit/FaceRecognizer/master/input.gif)
 
 录入之前，可以更改你的数字标签。
 点击开始后，轻轻转动头部，直到所有的红点变绿，录入完成。
 
 ### 识别
 
-![(录入)](https://raw.githubusercontent.com/Bighit/FaceRecognizer/master/recognize.gif){:height="50%" width="50%"}
+![(录入)](https://raw.githubusercontent.com/Bighit/FaceRecognizer/master/recognize.gif)
 
 开始识别后，会有红框选中识别的面部，需要先通过活体检测，才会比对该面部的身份信息。
 识别成功后，会弹出对应人身份的数字标签。
